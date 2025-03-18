@@ -1,0 +1,110 @@
+body{
+  background-color:#12E2D929;
+  text-align:center;
+  
+}
+  #background{
+    width:100%;
+    min-height:250px;
+  background-image: url('3.jpg');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  border-radius:100px 0 0 0;
+  animation-name: move;
+  animation-duration:20s;
+  animation-iteration-count: infinite;
+  
+}
+#image{
+  width:100%;
+  min-height:250px;
+  background-image: url('6.jpg');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  border-radius:0 0 50px 0;
+  animation-name:second;
+  animation-duration:20s;
+  animation-iteration-count: infinite;
+}
+@keyframes move{
+  0% {background-image: url('3.jpg');}
+  50% {background-image: url('5.jpg');}
+  100% {background-image: url('2.jpg');}
+  
+}
+@keyframes second{
+  0% {background-image: url('6.jpg');}
+  50% {background-image: url('4.jpg'); }
+  100% {background-image: url('1.jpg');}
+}
+h1{
+  color:#1A11E0;
+  font-family:monospace;
+  font-weight:bold;
+  font-size:30px;
+  text-transform:Capitalize;
+  animation-name:beauty;
+  animation-duration:20s;
+  animation-iteration-count: infinite;
+}
+#location{
+  width:50px;
+  height:50px;
+  border-radius:100px;
+  
+}
+#address{
+  color:blue;
+  font-weight: bold;
+  font-size:20px;
+  text-transform:Capitalize;
+  animation-name:beauty;
+  animation-duration:20s;
+  animation-iteration-count: infinite;
+  color:blue;
+}
+@keyframes beauty{
+  0% {color:blue; text-shadow:-1px 0 yellow,0 1px yellow,1px 0 yellow,0 -1px yellow;}
+  50% {color:#C627C1; text-shadow:-1px 0 white,0 1px white,1px 0 white,0 -1px white;}
+  100% {color:white; text-shadow:-1px 0 red,0 1px red,1px 0 red,0 -1px red;}
+}
+#roll{
+  font-family:monospace;
+  font-weight:bold;
+  color:blue;
+  text-shadow:-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  animation-name:slow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  position:relative;
+  animation-timing-function: ease-in-out;
+}
+@keyframes slow{
+  0%{ color: red;}
+  15%{color: orange;}
+  30%{color: yellow;}
+  45%{color: green;}
+  60%{color: blue;}
+  75%{color: indigo;}
+  100%{color: violet;}
+}
+/* for responsiveness*/
+@media only screen and (min-width:600px)
+{
+  #background{height: 900px;
+   
+  }
+  #image{height: 900px;}
+  #location{width: 200px; 
+    height: 200px;
+    border-radius: 400px;
+  }
+  #address{font-size:60px;}
+  h1{font-size: 150px;}
+  #roll{font-size: 50px;}
+  
+}
+
+
